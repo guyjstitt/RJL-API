@@ -11,4 +11,4 @@ import { VictimController } from './victim.controller';
     VictimService
   ]
 })
-export class VictimModule {}
+export class VictimModule { }

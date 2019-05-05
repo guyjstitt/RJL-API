@@ -3,12 +3,12 @@ import { Controller, Get } from '@nestjs/common';
 
 @Controller('victim')
 export class VictimController {
-    constructor(
-        public victimService: VictimService
-    ) {}
+  constructor(
+    public victimService: VictimService
+  ) { }
 
-    @Get()
-    findAll(): any {
-        return this.victimService.findAll();
-    }
+  @Get()
+  findAll(): any {
+    return this.victimService.findAll();
+  }
 }

@@ -5,12 +5,12 @@ import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class VictimService {
-    constructor(
-        @InjectRepository(Victims)
-        private readonly victimsRepository: Repository<Victims>,
-      ) {}
+  constructor(
+    @InjectRepository(Victims)
+    private readonly victimsRepository: Repository<Victims>,
+  ) { }
 
-      async findAll(): Promise<Victims[]> {
-        return await this.victimsRepository.find();
-      }
+  async findAll(): Promise<Victims[]> {
+    return await this.victimsRepository.find();
+  }
 }
