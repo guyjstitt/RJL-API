@@ -10,7 +10,13 @@ export class VictimsService {
     private readonly victimsRepository: Repository<Victims>,
   ) {}
 
-  async findAll(): Promise<Victims[]> {
+  async findAll(query): Promise<Victims[]> {
     return await this.victimsRepository.find();
   }
+
+  async create(victimsData: Victims): Promise<Victims>{
+    console.log('victimdata', victimsData);
+    return await this.victimsRepository.save(victimsData);
+  }
+
 }
