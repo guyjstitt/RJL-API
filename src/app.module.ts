@@ -14,4 +14,4 @@ import { OffenderModule } from './modules/offenders/offenders.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
